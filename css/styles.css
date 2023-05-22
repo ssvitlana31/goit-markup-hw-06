@@ -763,6 +763,7 @@ padding: 72px 24px 16px;
 
 }
 .form {
+position: relative;
 }
 .form-group {
   display: block;
@@ -807,4 +808,30 @@ left: 16px;
 top: 50%;
 transform: translateY(-50%);
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox {
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  position: absolute; */
+
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 464px;
+  left: 24px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  padding: 16px 8px 0 24px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.checkbox-text{
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: #8E8F99;
+
+
 }
