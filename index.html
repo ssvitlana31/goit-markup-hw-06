@@ -469,7 +469,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div class="media">
+        < class="media">
           <p class="social-media">Social media</p>
           <ul class="media-list list">
             <li class="media-item list">
@@ -502,38 +502,17 @@
             </li>
           </ul>
         </div>
-         <div class="email-input">
+        <div class="email-input">
           <p class="social-media">Subscribe</p>
-          <form class="form-email"></form>
-          <ul class="email-list list">
-           <li class="email-list-item">
-            <button type="submit" class="button-subscribe">E-mail</button>
-              <!-- <label class="form-email-group">
-              <input type="text" class="form-email-text" placeholder="E-mail">
-            </label> -->
-            </li>
-            <li class="email-list-item">
-               <button  type="submit" class="button-subscribe">Subscribe
+          <form class="form-email">
+            <input type="text" class="input-email" placeholder="E-mail">
+              <button  type="submit" class="button-subscribe">Subscribe
               <svg class="button-sabscribe-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-telegram"></use>
               </svg>
-            </button></li>
-          </ul>
-          </form> 
-            
-        </div>
-        <!-- <div class="email-button-container">
-          <p hidden class="social-media">Email</p>
-            <button  type="submit" class="button-subscribe">Subscribe
-              <svg class="button-sabscribe-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-telegram">
-
-                </use>
-              </svg>
             </button>
-
-          </div> -->
-      </div>
+          </form>
+        </div>
       </div>
     </footer> 
    
@@ -544,8 +523,7 @@
         <p class="modal-text">
         Leave your contacts and we will call you back
         </p>
-        <form class="form">
-        <label class="form-group">
+        <form class="form"><label class="form-group">
           <span class="form-group-text">Name</span>
           <span class="input-container">
             <input type="text" class="form-group-input" id="Name">
@@ -559,7 +537,7 @@
           <span class="form-group-text">Phone</span>
           <span class="input-container">
             <input type="text" class="form-group-input" id="Phone">
-          <svg class="form-group-icon" width="18" heigh="18">
+          <svg class="form-group-icon" width="18" height="18">
             <use href="./images/icons.svg#icon-phone-black"></use>
           </svg>
         </span>
@@ -569,20 +547,35 @@
           <span class="form-group-text">Email</span>
           <span class="input-container">
             <input type="text" class="form-group-input" id="Email">
-          <svg class="form-group-icon" width="18" heigh="18">
+          <svg class="form-group-icon" width="18" height="18">
             <use href="./images/icons.svg#icon-email-black"></use>
           </svg></span>
           
         </label>
-         <label class="form-group">
+         <label  for="comment" class="form-group">
           <span class="form-group-text">Comment</span>
+          <!-- <textarea 
+          name="comment" 
+          id="comment-text"
+          placeholder="Text input">
+        </textarea> -->
           <input type="text" class="form-group-input input-text"  placeholder="Text input">
           
         </label>
-        <input class="checkbox" type="checkbox" name="" value="I accept the terms and conditions of the Privacy Policy" id="Privacy Policy">
-        <label class="checkbox-text" for="Privacy Policy">I accept the terms and conditions of the <a href="Privacy Policy"></a> Privacy Policy</label>
+        <label class="checkbox-privasy">
+            <input type="checkbox" class="checkbox-input" />
+            <span class="checkbox-tick">
+              <svg width="10" height="8" class="checkbox-icon">
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
+            </span>
+            <span class="checkbox-text">I accept the terms and conditions of the Privacy Policy
+              <a href="" class="checkbox-link">Privacy Policy</a>
+            </span>
+          </label>
+         <button type="submit" class="button-send">Send</button>
         </form>
-         <button type="button" class="close-button"  data-modal-close >
+        <button type="button" class="close-button"  data-modal-close >
          <svg class="close-modal" width="8" height="8">
            <use href="./images/icons.svg#icon-close"></use>
          </svg>
@@ -592,3 +585,4 @@
  <script src="./js/modal.js"></script>
   </body>
 </html>
+ 

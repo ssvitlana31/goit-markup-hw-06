@@ -223,7 +223,7 @@ font-family: inherit;
   height: 56px;
   margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-Ї}
+}
 .button-service:focus {
   background-color: #404bbf;
 }
@@ -520,48 +520,40 @@ border: 1px solid #404bbf;
   margin-left: 80px;
   
 }
-.email-list {
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 8px 24px;
-gap: 16px;
-
-}
 .social-media {
 }
 .form-email {
+ display: flex;
  
-}
-.form-email-group {
+ }
+ .input-email{
 width: 264px;
 height: 40px;
-
-}
-
-.form-email-text {
-font-size: 12px;
-line-height: 2.0;
-display: flex;
-align-items: center;
-letter-spacing: 0.04em;
-color: #FFFFFF;
+border: 1px solid #FFFFFF;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+color: var(--brend-background-color);
 background-color: transparent;
-padding-left: 16px;
-}
-.email-button-container{
-  /* margin-top: 140px; */
-  margin-left: 24px;
+outline: none;
+padding-left: 24px;
+ }
+.input-email::placeholder{
+  color: var(--brend-background-color);
 }
 .button-subscribe {
-  display: flex;
+display: flex;background-color: ;
 flex-direction: row;
 justify-content: center;
 align-items: center;
 padding: 8px 24px;
 gap: 16px;
-
+background-color: var(--logo-color);
+color: var(--brend-background-color);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+margin-left: 24px;
 }
 .button-sabscribe-icon {
 }
@@ -763,7 +755,7 @@ padding: 72px 24px 16px;
 
 }
 .form {
-position: relative;
+
 }
 .form-group {
   display: block;
@@ -795,6 +787,7 @@ padding-left: 38px;
   padding-left: 16px;
   padding-bottom: 98px;
   height: 120px;
+  color: #8E8F99;
 }
 .form-group-input:focus {
 border-color: #4D5AE5;
@@ -809,29 +802,85 @@ top: 50%;
 transform: translateY(-50%);
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox {
-  /* -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-
-  position: absolute; */
-
+.form-group-icon{
+  color: #000000;
+}
+.checkbox-privasi{
+ display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.checkbox-input{
   position: absolute;
-  width: 16px;
-  height: 16px;
-  top: 464px;
-  left: 24px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
-  padding: 16px 8px 0 24px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.checkbox-tick{
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  margin-left: 24px;
+  background-color: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  transition: background-color 300ms linear, border 300ms linear;
+}
+.checkbox-icon{
+  
+   fill: #fff;
+  opacity: 0;
+  transition: opacity 300ms ease;
+
+}
+.checkbox-input + .checkbox-tick {
+  background-color: #4074f8;
+  border: 1px solid #4074f8;
+}
+
+.checkbox-input:checked + .checkbox-tick > .checkbox-icon {
+  opacity: 1;
+}
+.checkbox-input:focus + .checkbox-tick {
+  outline: 1px solid #4074f8;
+}
 .checkbox-text{
+
 font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.04em;
 color: #8E8F99;
-
-
 }
+.checkbox-link{
+  color: #4d5ae5;
+}
+.button-send{
+display: block;
+align-items: center;
+justify-content: center;
+padding: 16px 32px;
+gap: 10px;
+width: 169px;
+height: 56px;
+left: 635px;
+top: 584px;
+background: #4D5AE5;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+color: #FFFFFF;
+border: none;
+cursor: pointer;
+min-width: 169px;
+height: 56px;
+margin: 24px auto;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} 
+
